@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "custom_message": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "blaze_rod",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "custom_message": {
+                                "open": 1
+                            },
+                            "cwm": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "custom_message"
+        ]
+    ],
+    "rewards": {
+        "function": "cwm:events/opened"
+    },
+    "sends_telemetry_event": true
+}

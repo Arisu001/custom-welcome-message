@@ -1,0 +1,12 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "hotbar.4": {
+                "items": "#cwm:langs",
+                "count": 1
+            }
+        }
+    }
+}

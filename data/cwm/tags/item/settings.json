@@ -1,0 +1,16 @@
+{
+    "replace": true,
+    "values": [
+        "barrier",
+        "blaze_rod",
+        "blue_banner",
+        "breeze_rod",
+        "compass",
+        "recovery_compass",
+        "nether_star",
+        "oak_door",
+        "red_banner",
+        "tripwire_hook",
+        "writable_book"
+    ]
+}

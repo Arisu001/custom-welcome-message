@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "test_spawn": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "nether_star",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "spawn": {
+                                "test": 1
+                            },
+                            "cwm": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "test_spawn"
+        ]
+    ],
+    "rewards": {
+        "function": "cwm:events/test_spawn"
+    },
+    "sends_telemetry_event": true
+}

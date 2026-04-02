@@ -1,0 +1,106 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "text": "Test ",
+            "color": "gray",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "Spawn",
+                    "color": "gold"
+                },
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "text": "Right-click",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        }
+    },
+    {
+        "function": "set_lore",
+        "lore": [
+            {
+                "text": "INFO",
+                "color": "blue",
+                "bold": true,
+                "italic": false,
+                "underlined": true,
+                "extra": [
+                    {
+                        "text": ":",
+                        "color": "yellow",
+                        "underlined": false
+                    }
+                ]
+            },
+            {
+                "text": ""
+            },
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "text": "Right-click to test your spawn",
+                        "color": "dark_purple"
+                    }
+                ]
+            },
+            {
+                "text": ""
+            },
+            {
+                "text": "----------------------------",
+                "color": "dark_gray",
+                "italic": false
+            },
+            {
+                "text": ""
+            },
+            {
+                "text": "Test",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Possible",
+                        "color": "green"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "consumable": {
+                "consume_seconds": 999999999,
+                "has_consume_particles": false
+            },
+            "enchantments": {
+                "infinity": 3
+            } 
+        }
+    },
+    {
+        "function": "toggle_tooltips",
+        "toggles": {
+            "consumable": true,
+            "enchantments": false,
+            "unbreakable": true
+        }
+    }
+]

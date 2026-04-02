@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "open_and_close": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "tripwire_hook",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "languages": 1,
+                            "cwm": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "open_and_close"
+        ]
+    ],
+    "rewards": {
+        "function": "cwm:events/languages"
+    },
+    "sends_telemetry_event": true
+}

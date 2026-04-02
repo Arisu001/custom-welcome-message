@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "datapack": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "barrier",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "uninstall": 1,
+                            "cwm": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "datapack"
+        ]
+    ],
+    "rewards": {
+        "function": "cwm:events/uninstall"
+    },
+    "sends_telemetry_event": true
+}

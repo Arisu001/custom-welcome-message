@@ -1,0 +1,234 @@
+[
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "storage": "cwm:player",
+            "nbt": "lang.english[].set_spawn.name[0]", 
+            "color": "gray",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "storage": "cwm:player",
+                    "nbt": "lang.english[].set_spawn.name[1]",
+                    "color": "gold"
+                },
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "storage": "cwm:player",
+                    "nbt": "lang.english[1]",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        }
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "storage": "cwm:player",
+            "nbt": "lang.french[].set_spawn.name[0]", 
+            "color": "gray",
+            "bold": true,
+            "italic": false,
+            "extra": [
+                {
+                    "storage": "cwm:player",
+                    "nbt": "lang.french[].set_spawn.name[1]",
+                    "color": "gold"
+                },
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false
+                },
+                {
+                    "storage": "cwm:player",
+                    "nbt": "lang.french[1]",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "slots": {
+                        "hotbar.4": {
+                            "items": "blue_banner",
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "INFO",
+                "color": "blue",
+                "bold": true,
+                "italic": false,
+                "underlined": true,
+                "extra": [
+                    {
+                        "text": ":",
+                        "color": "yellow",
+                        "underlined": false
+                    }
+                ]
+            },
+            {
+                "text": ""
+            },
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "storage": "cwm:player",
+                        "nbt": "lang.english[].set_spawn.lore",
+                        "color": "dark_purple"
+                    }
+                ]
+            },
+            {
+                "text": ""
+            },
+            {
+                "text": "----------------------------",
+                "color": "dark_gray",
+                "italic": false
+            },
+            {
+                "text": ""
+            },
+            {
+                "storage": "cwm:player",
+                "nbt": "lang.english[2]",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "storage": "cwm:player",
+                        "nbt": "lang.english[3]",
+                        "color": "dark_gray"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_all"
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "INFO",
+                "color": "blue",
+                "bold": true,
+                "italic": false,
+                "underlined": true,
+                "extra": [
+                    {
+                        "text": ":",
+                        "color": "yellow",
+                        "underlined": false
+                    }
+                ]
+            },
+            {
+                "text": ""
+            },
+            {
+                "text": "- ",
+                "color": "white",
+                "extra": [
+                    {
+                        "storage": "cwm:player",
+                        "nbt": "lang.french[].set_spawn.lore",
+                        "color": "dark_purple"
+                    }
+                ]
+            },
+            {
+                "text": ""
+            },
+            {
+                "text": "----------------------------",
+                "color": "dark_gray",
+                "italic": false
+            },
+            {
+                "text": ""
+            },
+            {
+                "storage": "cwm:player",
+                "nbt": "lang.french[2]",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "storage": "cwm:player",
+                        "nbt": "lang.french[3]",
+                        "color": "dark_gray"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_all",
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "slots": {
+                        "hotbar.4": {
+                            "items": "blue_banner",
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "consumable": {
+                "consume_seconds": 999999999,
+                "has_consume_particles": false
+            },
+            "enchantments": {
+                "infinity": 3
+            } 
+        }
+    },
+    {
+        "function": "toggle_tooltips",
+        "toggles": {
+            "consumable": true,
+            "enchantments": false,
+            "unbreakable": true
+        }
+    }
+]

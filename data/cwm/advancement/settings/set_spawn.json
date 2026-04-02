@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "set_spawn": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "compass",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "spawn": {
+                                "set": 1
+                            },
+                            "cwm": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "set_spawn"
+        ]
+    ],
+    "rewards": {
+        "function": "cwm:events/set_spawn"
+    },
+    "sends_telemetry_event": true
+}

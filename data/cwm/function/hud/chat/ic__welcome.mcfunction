@@ -1,0 +1,1 @@
+tellraw @s [{"storage": "cwm:message", "nbt": "abbreviation"}, {"storage": "cwm:message", "nbt": "title"}, {"storage": "cwm:message", "nbt": "player"}, {"storage": "cwm:message", "nbt": "subtitle"}, {"storage": "cwm:message", "nbt": "server_name"}]
