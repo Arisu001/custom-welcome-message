@@ -26,7 +26,16 @@
                     "bold": false
                 }
             ]
-        }
+        },
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": " {Tags: [\"lang_en\"]}"
+                }
+            }
+        ]
     },
     {
         "function": "set_name",
@@ -61,12 +70,7 @@
                 "condition": "entity_properties",
                 "entity": "this",
                 "predicate": {
-                    "slots": {
-                        "hotbar.4": {
-                            "items": "blue_banner",
-                            "count": 1
-                        }
-                    }
+                    "nbt": " {Tags: [\"lang_fr\"]}"
                 }
             }
         ]
@@ -132,7 +136,16 @@
                 ]
             }
         ],
-        "mode": "replace_all"
+        "mode": "replace_all",
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": " {Tags: [\"lang_en\"]}"
+                }
+            }
+        ]
     },
     {
         "function": "set_lore",
@@ -161,10 +174,15 @@
                 "extra": [
                     {
                         "storage": "cwm:player",
-                        "nbt": "lang.french[].set_spawn.lore",
+                        "nbt": "lang.french[].set_spawn.lore[0]",
                         "color": "dark_purple"
                     }
                 ]
+            },
+            {
+                "storage": "cwm:player",
+                "nbt": "lang.french[].set_spawn.lore[1]",
+                "color": "dark_purple"
             },
             {
                 "text": ""
@@ -201,12 +219,7 @@
                 "condition": "entity_properties",
                 "entity": "this",
                 "predicate": {
-                    "slots": {
-                        "hotbar.4": {
-                            "items": "blue_banner",
-                            "count": 1
-                        }
-                    }
+                    "nbt": " {Tags: [\"lang_fr\"]}"
                 }
             }
         ]

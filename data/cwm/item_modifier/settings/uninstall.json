@@ -1,6 +1,7 @@
 [
     {
         "function": "set_name",
+        "entity": "this",
         "name": {
             "text": "Uninstall ",
             "color": "red",
@@ -26,6 +27,7 @@
     },
     {
         "function": "set_lore",
+        "entity": "this",
         "lore": [
             {
                 "text": "INFO",

@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "selected": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "blue_banner",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "lang": {
+                                "french": 1
+                            },
+                            "cwm": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "selected"
+        ]
+    ],
+    "rewards": {
+        "function": "cwm:events/languages/french"
+    },
+    "sends_telemetry_event": true
+}

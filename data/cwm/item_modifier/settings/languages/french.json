@@ -1,16 +1,21 @@
 [
     {
+        "comment": "TEXT IN ENGLISH",
         "function": "set_name",
         "entity": "this",
         "name": {
-            "text": "Custom ",
-            "color": "gold",
+            "text": "Language",
+            "color": "light_purple",
             "bold": true,
             "italic": false,
             "extra": [
                 {
-                    "text": "Message",
-                    "color": "green"
+                    "text": ": ",
+                    "color": "yellow"
+                },
+                {
+                    "text": "French",
+                    "color": "blue"
                 },
                 {
                     "text": "  |  ",
@@ -33,12 +38,11 @@
                 "text": "INFO",
                 "color": "blue",
                 "bold": true,
-                "italic": false,
                 "underlined": true,
                 "extra": [
                     {
                         "text": ":",
-                        "color": "yellow",
+                        "color": "yellow", 
                         "underlined": false
                     }
                 ]
@@ -51,7 +55,7 @@
                 "color": "white",
                 "extra": [
                     {
-                        "text": "Right-click to open the settings",
+                        "text": "Right-click to select this language",
                         "color": "dark_purple"
                     }
                 ]
@@ -68,7 +72,7 @@
                 "text": ""
             },
             {
-                "text": "Settings",
+                "text": "Current language",
                 "color": "gray",
                 "italic": false,
                 "extra": [
@@ -77,7 +81,7 @@
                         "color": "yellow"
                     },
                     {
-                        "text": "Closed",
+                        "text": "English",
                         "color": "red"
                     }
                 ]
@@ -91,10 +95,7 @@
             "consumable": {
                 "consume_seconds": 999999999,
                 "has_consume_particles": false
-            },
-            "enchantments": {
-                "infinity": 3
-            } 
+            }
         }
     },
     {

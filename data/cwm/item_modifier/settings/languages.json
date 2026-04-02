@@ -47,10 +47,14 @@
                 "color": "white",
                 "extra": [
                     {
-                        "text": "Right-click to open and close the languages",
+                        "text": "Right-click to open and close",
                         "color": "dark_purple"
                     }
                 ]
+            },
+            {
+                "text": "   the languages",
+                "color": "dark_purple"
             },
             {
                 "text": ""
@@ -63,21 +67,21 @@
             {
                 "text": ""
             },
-                {
-                    "text": "Languages",
-                    "color": "gray",
-                    "italic": false,
-                    "extra": [
-                        {
-                            "text": ": ",
-                            "color": "yellow"
-                        },
-                        {
-                            "text": "Closed",
-                            "color": "red"
-                        }
-                    ]
-                }
+            {
+                "text": "Languages",
+                "color": "gray",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "Closed",
+                        "color": "red"
+                    }
+                ]
+            }
         ],
         "mode": "replace_all",
         "conditions": [

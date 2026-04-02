@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "selected": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": "red_banner",
+                    "count": 1,
+                    "components": {
+                        "custom_data": {
+                            "lang": {
+                                "english": 1
+                            },
+                            "cwm": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "selected"
+        ]
+    ],
+    "rewards": {
+        "function": "cwm:events/languages/english"
+    },
+    "sends_telemetry_event": true
+}
