@@ -8,6 +8,47 @@
             "color": "gray",
             "bold": true,
             "italic": false,
+            "strikethrough": true,
+            "extra": [
+                {
+                    "storage": "cwm:player",
+                    "nbt": "lang.english[8]",
+                    "color": "gold"
+                },
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false,
+                    "strikethrough": false
+                },
+                {
+                    "storage": "cwm:player",
+                    "nbt": "lang.english[1]",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "cwm:this/languages/english"
+            },
+            {
+                "condition": "reference",
+                "name": "cwm:this/no_spawn"
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "storage": "cwm:player",
+            "nbt": "lang.english[].test_spawn.name",
+            "color": "gray",
+            "bold": true,
+            "italic": false,
             "extra": [
                 {
                     "storage": "cwm:player",
@@ -31,10 +72,55 @@
             {
                 "condition": "reference",
                 "name": "cwm:this/languages/english"
+            },
+            {
+                "condition": "reference",
+                "name": "cwm:this/has_spawn"
             }
         ]
     },
     {
+        "function": "set_name",
+        "entity": "this",
+        "name": {
+            "storage": "cwm:player",
+            "nbt": "lang.french[].test_spawn.name",
+            "color": "gray",
+            "bold": true,
+            "italic": false,
+            "strikethrough": true,
+            "extra": [
+                {
+                    "storage": "cwm:player",
+                    "nbt": "lang.french[8]",
+                    "color": "gold"
+                },
+                {
+                    "text": "  |  ",
+                    "color": "white",
+                    "bold": false,
+                    "strikethrough": false
+                },
+                {
+                    "storage": "cwm:player",
+                    "nbt": "lang.french[1]",
+                    "color": "gray",
+                    "bold": false
+                }
+            ]
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "cwm:this/languages/french"
+            },
+            {
+                "condition": "reference",
+                "name": "cwm:this/no_spawn"
+            }
+        ]
+    },
+        {
         "function": "set_name",
         "entity": "this",
         "name": {
@@ -66,6 +152,10 @@
             {
                 "condition": "reference",
                 "name": "cwm:this/languages/french"
+            },
+            {
+                "condition": "reference",
+                "name": "cwm:this/has_spawn"
             }
         ]
     },
@@ -226,6 +316,16 @@
             }
         ]
     },
+        {
+        "function": "set_components",
+        "components": {},
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "cwm:this/no_spawn"
+            }
+        ]
+    },
     {
         "function": "set_components",
         "components": {
@@ -235,8 +335,14 @@
             },
             "enchantments": {
                 "infinity": 3
-            } 
-        }
+            }
+        },
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "cwm:this/has_spawn"
+            }
+        ]
     },
     {
         "function": "toggle_tooltips",

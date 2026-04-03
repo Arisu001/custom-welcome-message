@@ -246,7 +246,7 @@
                             },
                             {
                                 "storage": "cwm:player",
-                                "nbt": "spawn.coordinates.x",
+                                "nbt": "spawn.coords.x",
                                 "color": "gold"
                             }
                         ]
@@ -265,7 +265,7 @@
                             },
                             {
                                 "storage": "cwm:player",
-                                "nbt": "spawn.coordinates.y",
+                                "nbt": "spawn.coords.y",
                                 "color": "gold"
                             }
                         ]
@@ -285,7 +285,7 @@
                             },
                             {
                                 "storage": "cwm:player",
-                                "nbt": "spawn.coordinates.z",
+                                "nbt": "spawn.coords.z",
                                 "color": "gold"
                             }
                         ]
@@ -326,7 +326,7 @@
                             },
                             {
                                 "storage": "cwm:player",
-                                "nbt": "spawn.coordinates.x",
+                                "nbt": "spawn.coords.x",
                                 "color": "gold"
                             }
                         ]
@@ -345,7 +345,7 @@
                             },
                             {
                                 "storage": "cwm:player",
-                                "nbt": "spawn.coordinates.y",
+                                "nbt": "spawn.coords.y",
                                 "color": "gold"
                             }
                         ]
@@ -365,7 +365,7 @@
                             },
                             {
                                 "storage": "cwm:player",
-                                "nbt": "spawn.coordinates.z",
+                                "nbt": "spawn.coords.z",
                                 "color": "gold"
                             }
                         ]
@@ -398,7 +398,7 @@
                     },
                     {
                         "storage": "cwm:player",
-                        "nbt": "spawn.coordinates.dir",
+                        "nbt": "spawn.coords.dir",
                         "color": "gold"
                     }
                 ]

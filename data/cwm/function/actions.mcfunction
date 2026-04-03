@@ -17,5 +17,9 @@ execute if entity @s[tag=open] if score $tmp_clk tms.value matches 2.. run funct
 
 
 # Verify storage
-execute if data storage cwm:player spawn.coordinates{} run function cwm:events/set_spawn/added
-execute unless data storage cwm:player spawn.coordinates{} run function cwm:events/set_spawn/removed
+execute if data storage cwm:player spawn.coords{} run function cwm:events/set_spawn/added
+execute unless data storage cwm:player spawn.coords{} run function cwm:events/set_spawn/removed
+
+
+# Restore
+execute if score @s old_spawn matches 1 run function cwm:events/set_spawn/restored

@@ -39,7 +39,7 @@ data merge storage cwm:player { \
                     lore: [ "instant double right-click", "   to uninstall it" ] \
                 } \
             }, \
-            "Right-click", "Actual", "Nothing", "Opened", "Closed", "Activated", "Uninstalled", "Spawn" \
+            "Right-click", "Actual", "Nothing", "Opened", "Closed", "Activated", "Uninstalled", "Spawn", "Remove" \
         ] \
     } \
 }
@@ -69,14 +69,14 @@ data merge storage cwm:player { \
                     lore: "Clic-droit pour voir votre point d'apparition" \
                 }, \
                 test_spawn: { \
-                    name: "Tester le", \
+                    name: "Tester ", \
                     lore: "Clic-droit pour tester votre point d'apparition" \
                 }, \
                 undo: { \
                     lore: "Clic-droit pour revenir en arrière" \
                 }, \
                 remove_spawn: { \
-                    name: "Supprimer le ", \
+                    name: "Supprimer ", \
                     lore: "Clic-droit pour supprimer votre point d'apparition" \
                 }, \
                 uninstall: { \
@@ -84,7 +84,7 @@ data merge storage cwm:player { \
                     lore: [ "Double clic-droit instantané", "   pour le désinstaller" ] \
                 } \
             }, \
-            "Clic-droit", "Actuel", "Rien", "Ouvert", "Fermé", "Activé", "Désintallé", "Point d'Apparition" \
+            "Clic-droit", "Actuel", "Rien", "Ouvert", "Fermé", "Activé", "Désintallé", "Point d'Apparition", "Supprimer" \
         ] \
     } \
 }

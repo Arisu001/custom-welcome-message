@@ -1,8 +1,6 @@
 function cwm:init/storage
 
 
-kill @e[tag=cwm, type=#cwm:__class]
-
 # Reset all scores
 scoreboard players reset * tms.const
 scoreboard players reset * tms.temp
@@ -47,3 +45,5 @@ tag @s remove lang_fr
 tag @s remove open
 tag @s add lang_en
 tag @s add close
+
+scoreboard players reset @s old_spawn

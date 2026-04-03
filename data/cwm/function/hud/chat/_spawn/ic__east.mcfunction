@@ -1,3 +1,3 @@
-tellraw @s [{"text": "[", "color": "white"}, {"text": "TMS", "color": "dark_aqua"}, {"text": "] "}, {"text": "> ", "color": "yellow"}, {"text": "Orientation", "color": "gray"}, {"text": ": ", "color": "yellow"}, {"text": "East", "color": "green"}]
+tellraw @s [{text: "[", color: "white"}, {text: "TMS", color: "dark_aqua"}, {text: "] "}, {text: "> ", color: "yellow"}, {text: "Orientation", color: "gray"}, {text: ": ", color: "yellow"}, {text: "East", color: "green"}]
 
-data modify storage cwm:player spawn.coordinates.dir set value "East"
+data modify storage cwm:player spawn.coords.dir set value "East"
