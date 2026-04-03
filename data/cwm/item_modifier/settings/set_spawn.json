@@ -4,14 +4,14 @@
         "entity": "this",
         "name": {
             "storage": "cwm:player",
-            "nbt": "lang.english[].set_spawn.name[0]", 
+            "nbt": "lang.english[].set_spawn.name", 
             "color": "gray",
             "bold": true,
             "italic": false,
             "extra": [
                 {
                     "storage": "cwm:player",
-                    "nbt": "lang.english[].set_spawn.name[1]",
+                    "nbt": "lang.english[8]",
                     "color": "gold"
                 },
                 {
@@ -29,11 +29,8 @@
         },
         "conditions": [
             {
-                "condition": "entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "nbt": " {Tags: [\"lang_en\"]}"
-                }
+                "condition": "reference",
+                "name": "cwm:this/languages/english"
             }
         ]
     },
@@ -42,14 +39,14 @@
         "entity": "this",
         "name": {
             "storage": "cwm:player",
-            "nbt": "lang.french[].set_spawn.name[0]", 
+            "nbt": "lang.french[].set_spawn.name", 
             "color": "gray",
             "bold": true,
             "italic": false,
             "extra": [
                 {
                     "storage": "cwm:player",
-                    "nbt": "lang.french[].set_spawn.name[1]",
+                    "nbt": "lang.french[8]",
                     "color": "gold"
                 },
                 {
@@ -67,11 +64,8 @@
         },
         "conditions": [
             {
-                "condition": "entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "nbt": " {Tags: [\"lang_fr\"]}"
-                }
+                "condition": "reference",
+                "name": "cwm:this/languages/french"
             }
         ]
     },
@@ -99,15 +93,59 @@
             {
                 "text": "- ",
                 "color": "white",
-                "extra": [
-                    {
-                        "storage": "cwm:player",
-                        "nbt": "lang.english[].set_spawn.lore",
-                        "color": "dark_purple"
-                    }
-                ]
-            },
+                "bold": false, 
+                "italic": true,
+                "underlined": false
+            }
+        ],
+        "mode": "insert",
+        "offset": 0
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
             {
+                "storage": "cwm:player",
+                "nbt": "lang.english[].set_spawn.lore",
+                "color": "dark_purple"
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "cwm:this/languages/english"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "storage": "cwm:player",
+                "nbt": "lang.french[].set_spawn.lore",
+                "color": "dark_purple"
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 2,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "cwm:this/languages/french"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+                        {
                 "text": ""
             },
             {
@@ -117,7 +155,16 @@
             },
             {
                 "text": ""
-            },
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 3,
+        "size": 4
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
             {
                 "storage": "cwm:player",
                 "nbt": "lang.english[2]",
@@ -136,14 +183,12 @@
                 ]
             }
         ],
-        "mode": "replace_all",
+        "mode": "insert",
+        "offset": 6,
         "conditions": [
             {
-                "condition": "entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "nbt": " {Tags: [\"lang_en\"]}"
-                }
+                "condition": "reference",
+                "name": "cwm:this/no_spawn_in_english"
             }
         ]
     },
@@ -151,50 +196,6 @@
         "function": "set_lore",
         "entity": "this",
         "lore": [
-            {
-                "text": "INFO",
-                "color": "blue",
-                "bold": true,
-                "italic": false,
-                "underlined": true,
-                "extra": [
-                    {
-                        "text": ":",
-                        "color": "yellow",
-                        "underlined": false
-                    }
-                ]
-            },
-            {
-                "text": ""
-            },
-            {
-                "text": "- ",
-                "color": "white",
-                "extra": [
-                    {
-                        "storage": "cwm:player",
-                        "nbt": "lang.french[].set_spawn.lore[0]",
-                        "color": "dark_purple"
-                    }
-                ]
-            },
-            {
-                "storage": "cwm:player",
-                "nbt": "lang.french[].set_spawn.lore[1]",
-                "color": "dark_purple"
-            },
-            {
-                "text": ""
-            },
-            {
-                "text": "----------------------------",
-                "color": "dark_gray",
-                "italic": false
-            },
-            {
-                "text": ""
-            },
             {
                 "storage": "cwm:player",
                 "nbt": "lang.french[2]",
@@ -213,14 +214,203 @@
                 ]
             }
         ],
-        "mode": "replace_all",
+        "mode": "insert",
+        "offset": 6,    
         "conditions": [
             {
-                "condition": "entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "nbt": " {Tags: [\"lang_fr\"]}"
-                }
+                "condition": "reference",
+                "name": "cwm:this/no_spawn_in_french"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "storage": "cwm:player",
+                "nbt": "lang.english[2]",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "x",
+                        "color": "aqua",
+                        "extra": [
+                            {
+                                "text": ": ",
+                                "color": "yellow"
+                            },
+                            {
+                                "storage": "cwm:player",
+                                "nbt": "spawn.coordinates.x",
+                                "color": "gold"
+                            }
+                        ]
+                    },
+                    {
+                        "text": ", ",
+                        "color": "white"
+                    },
+                    {
+                        "text": "y",
+                        "color": "aqua",
+                        "extra": [
+                            {
+                                "text": ": ",
+                                "color": "yellow"
+                            },
+                            {
+                                "storage": "cwm:player",
+                                "nbt": "spawn.coordinates.y",
+                                "color": "gold"
+                            }
+                        ]
+                        
+                    },
+                    {
+                        "text": ", ",
+                        "color": "white"
+                    },
+                    {
+                        "text": "z",
+                        "color": "aqua",
+                        "extra": [
+                            {
+                                "text": ": ",
+                                    "color": "yellow"
+                            },
+                            {
+                                "storage": "cwm:player",
+                                "nbt": "spawn.coordinates.z",
+                                "color": "gold"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 8,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "cwm:this/has_spawn_in_english"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "storage": "cwm:player",
+                "nbt": "lang.french[2]",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "text": "x",
+                        "color": "aqua",
+                        "extra": [
+                            {
+                                "text": ": ",
+                                "color": "yellow"
+                            },
+                            {
+                                "storage": "cwm:player",
+                                "nbt": "spawn.coordinates.x",
+                                "color": "gold"
+                            }
+                        ]
+                    },
+                    {
+                        "text": ", ",
+                        "color": "white"
+                    },
+                    {
+                        "text": "y",
+                        "color": "aqua",
+                        "extra": [
+                            {
+                                "text": ": ",
+                                "color": "yellow"
+                            },
+                            {
+                                "storage": "cwm:player",
+                                "nbt": "spawn.coordinates.y",
+                                "color": "gold"
+                            }
+                        ]
+                        
+                    },
+                    {
+                        "text": ", ",
+                        "color": "white"
+                    },
+                    {
+                        "text": "z",
+                        "color": "aqua",
+                        "extra": [
+                            {
+                                "text": ": ",
+                                    "color": "yellow"
+                            },
+                            {
+                                "storage": "cwm:player",
+                                "nbt": "spawn.coordinates.z",
+                                "color": "gold"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 6,
+        "size": 8,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "cwm:this/has_spawn_in_french"
+            }
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "         orientation",
+                "color": "aqua",
+                "italic": false,
+                "extra": [
+                    {
+                        "text": ": ",
+                        "color": "yellow"
+                    },
+                    {
+                        "storage": "cwm:player",
+                        "nbt": "spawn.coordinates.dir",
+                        "color": "gold"
+                    }
+                ]
+            }
+        ],
+        "mode": "replace_section",
+        "offset": 7,
+        "size": 4,
+        "conditions": [
+            {
+                "condition": "reference",
+                "name": "cwm:this/has_spawn"
             }
         ]
     },

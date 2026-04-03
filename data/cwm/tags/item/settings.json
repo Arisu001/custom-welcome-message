@@ -11,6 +11,9 @@
         "oak_door",
         "red_banner",
         "tripwire_hook",
-        "writable_book"
+        "writable_book",
+        "iron_spear",
+        "golden_spear",
+        "structure_void"
     ]
 }

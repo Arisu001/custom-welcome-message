@@ -14,3 +14,8 @@ execute if entity @s[tag=close] if score $tmp_clk tms.value matches 2.. run func
 
 # Close
 execute if entity @s[tag=open] if score $tmp_clk tms.value matches 2.. run function cwm:events/languages/close
+
+
+# Verify storage
+execute if data storage cwm:player spawn.coordinates{} run function cwm:events/set_spawn/added
+execute unless data storage cwm:player spawn.coordinates{} run function cwm:events/set_spawn/removed

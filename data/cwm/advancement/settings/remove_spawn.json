@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "test_spawn": {
+        "remove_spawn": {
             "trigger": "using_item",
             "conditions": {
                 "player": [
@@ -10,12 +10,12 @@
                     }
                 ],
                 "item": {
-                    "items": "nether_star",
+                    "items": "structure_void",
                     "count": 1,
                     "components": {
                         "custom_data": {
                             "spawn": {
-                                "test": 1
+                                "remove": 1
                             },
                             "cwm": 1
                         }
@@ -26,11 +26,11 @@
     },
     "requirements": [
         [
-            "test_spawn"
+            "remove_spawn"
         ]
     ],
     "rewards": {
-        "function": "cwm:events/test_spawn"
+        "function": "cwm:events/remove_spawn"
     },
     "sends_telemetry_event": true
 }
