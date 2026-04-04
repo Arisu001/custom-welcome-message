@@ -34,6 +34,7 @@ advancement revoke @s only cwm:settings/open custom_message
 advancement revoke @s only cwm:settings/set_spawn set_spawn
 advancement revoke @s only cwm:settings/get_spawn get_spawn
 advancement revoke @s only cwm:settings/test_spawn test_spawn
+advancement revoke @s only cwm:settings/undo undo
 advancement revoke @s only cwm:settings/remove_spawn remove_spawn
 advancement revoke @s only cwm:settings/uninstall datapack
 advancement revoke @s only cwm:settings/languages/english selected
@@ -45,5 +46,10 @@ tag @s remove lang_fr
 tag @s remove open
 tag @s add lang_en
 tag @s add close
+tag @s remove set_spwn
+tag @s remove get_spwn
+tag @s remove tst_spwn
+tag @s remove has_undo
+tag @s add no_undo
 
 scoreboard players reset @s old_spawn

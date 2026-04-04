@@ -1,5 +1,6 @@
 # Remove Help
 clear @s #cwm:settings[custom_data={help: 1b, cwm: 1b}]
+clear @s #cwm:settings[custom_data={uninstall: 1b, cwm: 1b}]
 
 # Set spawn
 execute store result storage cwm:inventory spawn.set byte 1 run data get entity @s Inventory[].components.minecraft:custom_data.spawn.set 1
@@ -29,23 +30,19 @@ execute if score $cm_open tms.var matches 0 unless data storage cwm:inventory {c
 execute if score $nb_cm_close tms.var matches 2.. run clear @s #cwm:settings[custom_data={custom_message: {close: 1b}, cwm: 1b}]
 execute if score $cm_open tms.var matches 0 run item modify entity @s hotbar.4 cwm:settings/close
 
-# Undo = 0
+# Undo
 execute store result storage cwm:inventory spawn.undo byte 1 run data get entity @s Inventory[].components.minecraft:custom_data.spawn.undo 1
 execute store result score $nb_spawn_undo tms.var run clear @s #cwm:settings[custom_data={spawn: {undo: 1b}, cwm: 1b}] 0
-execute unless data storage cwm:inventory {spawn: {undo: 1b}} run item replace entity @s[tag=no_spawn] hotbar.6 with iron_spear[custom_data={spawn: {undo: 1b}, cwm: 1b}] 1
+item replace entity @s[tag=no_spawn] hotbar.7 with arrow[custom_data={spawn: {undo: 1b}, cwm: 1b}] 1
+item replace entity @s[tag=has_spawn, tag=no_undo] hotbar.7 with arrow[custom_data={spawn: {undo: 1b}, cwm: 1b}] 1
+item replace entity @s[tag=has_spawn, tag=has_undo] hotbar.7 with spectral_arrow[custom_data={spawn: {undo: 1b}, cwm: 1b}] 1
 execute if score $nb_spawn_undo tms.var matches 2.. run clear @s #cwm:settings[custom_data={spawn: {undo: 1b}, cwm: 1b}]
-# item modify entity @s hotbar.6 cwm:settings/undo
+item modify entity @s hotbar.7 cwm:settings/undo
 
-# Undo = 1
-execute store result storage cwm:inventory spawn.undo byte 1 run data get entity @s Inventory[].components.minecraft:custom_data.spawn.undo 1
-execute store result score $nb_spawn_undo tms.var run clear @s #cwm:settings[custom_data={spawn: {undo: 1b}, cwm: 1b}] 0
-execute unless data storage cwm:inventory {spawn: {undo: 1b}} run item replace entity @s[tag=has_sqpawn] hotbar.6 with golden_spear[custom_data={spawn: {undo: 1b}, cwm: 1b}] 1
-execute if score $nb_spawn_undo tms.var matches 2.. run clear @s #cwm:settings[custom_data={spawn: {undo: 1b}, cwm: 1b}]
-# item modify entity @s hotbar.6 cwm:settings/undo
 
 # Remove
 execute store result storage cwm:inventory spawn.remove byte 1 run data get entity @s Inventory[].components.minecraft:custom_data.spawn.remove 1
 execute store result score $nb_spawn_remove tms.var run clear @s #cwm:settings[custom_data={spawn: {remove: 1b}, cwm: 1b}] 0
-execute unless data storage cwm:inventory {spawn: {remove: 1b}} run item replace entity @s hotbar.7 with structure_void[custom_data={spawn: {remove: 1b}, cwm: 1b}] 1
+execute unless data storage cwm:inventory {spawn: {remove: 1b}} run item replace entity @s hotbar.8 with structure_void[custom_data={spawn: {remove: 1b}, cwm: 1b}] 1
 execute if score $nb_spawn_remove tms.var matches 2.. run clear @s #cwm:settings[custom_data={spawn: {remove: 1b }, cwm: 1b}]
-item modify entity @s hotbar.7 cwm:settings/remove
+item modify entity @s hotbar.8 cwm:settings/remove_spawn

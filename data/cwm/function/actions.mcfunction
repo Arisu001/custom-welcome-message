@@ -11,15 +11,17 @@ execute if score $wtg_clk tms.var matches 1 run scoreboard players add $tmp_clk 
 # Languages
 # Open
 execute if entity @s[tag=close] if score $tmp_clk tms.value matches 2.. run function cwm:events/languages/open
-
 # Close
 execute if entity @s[tag=open] if score $tmp_clk tms.value matches 2.. run function cwm:events/languages/close
+
+
+# Spawn = Wait 20s to reuse
+# Set
+execute if entity @s[tag=set_spwn] if score $tmp_clk tms.value matches 10.. run function cwm:events/can_reuse
+# Test
+execute if entity @s[tag=tst_spwn] if score $tmp_clk tms.value matches 10.. run function cwm:events/can_reuse
 
 
 # Verify storage
 execute if data storage cwm:player spawn.coords{} run function cwm:events/set_spawn/added
 execute unless data storage cwm:player spawn.coords{} run function cwm:events/set_spawn/removed
-
-
-# Restore
-execute if score @s old_spawn matches 1 run function cwm:events/set_spawn/restored

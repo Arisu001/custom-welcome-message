@@ -1,3 +1,5 @@
+kill @e[tag=cwm]
+
 summon marker ~ ~ ~ {Tags: ["cwm_spwn", "cwm"]}
 summon marker ~ ~ ~ {Tags: ["cwm_spwn_trg", "cwm"]}
 

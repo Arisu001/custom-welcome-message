@@ -73,6 +73,7 @@ data merge storage cwm:player { \
                     lore: "Clic-droit pour tester votre point d'apparition" \
                 }, \
                 undo: { \
+                    name: "Annuler", \
                     lore: "Clic-droit pour revenir en arrière" \
                 }, \
                 remove_spawn: { \

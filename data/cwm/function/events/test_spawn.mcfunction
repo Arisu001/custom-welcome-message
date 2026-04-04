@@ -1,3 +1,4 @@
 tag @s remove cwm_fix
+tag @s add tst_spwn
 
-advancement revoke @s only cwm:settings/test_spawn test_spawn
+scoreboard players add $wtg_clk tms.var 1

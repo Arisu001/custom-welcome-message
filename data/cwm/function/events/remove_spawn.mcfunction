@@ -10,7 +10,9 @@ data remove storage cwm:player spawn{}
 scoreboard players enable @s old_spawn
 
 tag @s remove has_spawn
+tag @s remove has_undo
 tag @s add no_spawn
+tag @s add no_undo
 
 kill @e[tag=cwm_spwn]
 
